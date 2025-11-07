@@ -1,0 +1,56 @@
+{
+	"name": "arm",
+	"displayName": "Arm Assembly",
+	"description": "Arm assembly syntax support for Visual Studio Code",
+	"version": "1.7.4",
+	"publisher": "dan-c-underwood",
+	"icon": "images/icon.png",
+	"author": {
+		"name": "Dan Underwood"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"galleryBanner": {
+		"color": "#0084A9",
+		"theme": "dark"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dan-c-underwood/vscode-arm.git"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "arm",
+				"aliases": [
+					"ARM",
+					"arm",
+					"Arm"
+				],
+				"extensions": [
+					".s",
+					".S",
+					".asm",
+					".sx"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "arm",
+				"scopeName": "source.arm",
+				"path": "./syntaxes/arm.tmlanguage.json"
+			}
+		]
+	},
+	"__metadata": {
+		"installedTimestamp": 1759468296821,
+		"targetPlatform": "undefined",
+		"size": 124378
+	}
+}
