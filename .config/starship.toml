@@ -1,0 +1,112 @@
+# ──────────────── GENERAL ────────────────
+add_newline = true
+command_timeout = 2000
+
+format = """
+$directory$git_branch$c$cpp$nodejs$rust$python$golang$docker_context$aws$cmd_duration$time
+$character
+"""
+
+# ──────────────── PROMPT SYMBOL ────────────────
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[>](bold red)"
+vicmd_symbol = "[<](bold blue)"
+
+# ──────────────── DIRECTORY ────────────────
+[directory]
+style = "cyan bold"
+truncate_to_repo = true
+truncation_length = 3
+truncation_symbol = "../"
+read_only = " [RO]"
+read_only_style = "red"
+
+# ──────────────── GIT ────────────────
+[git_branch]
+format = 'on [\($branch\)]($style)'
+style = "purple bold"
+truncation_length = 15
+
+[git_status]
+format = '([\($all_status $ahead_behind\)]($style))'
+style = "red bold"
+ahead = "+${count}"
+behind = "-${count}"
+untracked = "?${count}"
+modified = "!${count}"
+staged = "+${count}"
+deleted = "✘${count}"
+
+# ──────────────── LANGUAGES ────────────────
+[c]
+format = " via [$name-($version)]($style)"
+style = "blue bold"
+detect_extensions = ["c", "h"]
+
+[cpp]
+format = " via [$name-($version)]($style)" 
+style = "blue bold"
+detect_extensions = ["cpp", "cc", "cxx", "c++", "hpp", "hh", "hxx", "h++"]
+
+[nodejs]
+format = " via [$symbol-($version)]($style)"
+symbol = "nodejs"
+version_format = "v${raw}"
+style = "green bold"
+detect_extensions = ["js", "mjs", "cjs", "ts", "tsx", "jsx"]
+detect_files = ["package.json"]
+
+[python]
+format = " via [$symbol$pyenv_prefix-($version)]($style)"
+symbol = "python3"
+style = "yellow bold"
+detect_extensions = ["py"]
+detect_files = ["requirements.txt", "pyproject.toml"]
+
+[rust]
+format = " via [$symbol-($version)]($style)"
+symbol = "rust"
+style = "red bold"
+detect_extensions = ["rs"]
+detect_files = ["Cargo.toml"]
+
+[golang]
+format = " via [$symbol-($version)]($style)"
+symbol = "golang"
+style = "cyan bold"
+detect_extensions = ["go"]
+detect_files = ["go.mod"]
+
+# ──────────────── TOOLS ────────────────
+[docker_context]
+format = " via [$symbol$context]($style)"
+symbol = "docker "
+style = "blue bold"
+only_with_files = true
+
+[aws]
+format = " on [$symbol($profile )]($style)"
+symbol = "cloud  "
+style = "bold yellow"
+disabled = false
+
+[cmd_duration]
+min_time = 500
+format = ' took [$duration]($style)'
+style = "bold yellow"
+show_milliseconds = false
+show_notifications = false
+
+[jobs]
+symbol = "✦ "
+style = "bold blue"
+number_threshold = 1
+format = '[$symbol$number]($style) '
+
+# ──────────────── TIME ────────────────
+[time]
+disabled = false
+format = " [$time]($style)"
+time_format = "%H:%M:%S"
+style = "dimmed white"

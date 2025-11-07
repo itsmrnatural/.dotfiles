@@ -1,0 +1,13 @@
+theme = "autumn_night"
+
+[editor]
+mouse = true
+true-color = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "block"
+
+[editor.file-picker]
+hidden = false
