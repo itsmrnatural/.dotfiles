@@ -145,6 +145,9 @@ alias cbld='clang -std=c99 -Wall -Wextra -O3 -DNDEBUG -flto -march=native'
 # Quick build (minimal flags)
 alias cq='clang -std=c99 -Wall -O0'
 
+# C++ aliases
+alias cplus='clang++ -std=c++11 -Wall -Wextra -Wpedantic'
+
 # C++ versions
 # Lazy load ghcup environment only when needed
 ghcup_env_loaded=0
@@ -170,6 +173,3 @@ alias gmv='git mv'
 alias grm='git rm'
 
 export PATH=$PATH:/Users/natural/.spicetify
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
