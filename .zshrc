@@ -137,7 +137,7 @@ fi
 
 #* C and C++ build flag aliases
 # Development build
-alias cdev='clang -std=c99 -Wall -Wextra -Wpedantic -g -O0 -fsanitize=address,undefined -fno-omit-frame-pointer'
+alias cdev='clang -std=c99 -Wall -Wextra -Wpedantic -g -O0 -fsanitize=undefined -fno-omit-frame-pointer'
 
 # Release build  
 alias cbld='clang -std=c99 -Wall -Wextra -O3 -DNDEBUG -flto -march=native'
@@ -173,3 +173,5 @@ alias gmv='git mv'
 alias grm='git rm'
 
 export PATH=$PATH:/Users/natural/.spicetify
+
+. "$HOME/.local/bin/env"
