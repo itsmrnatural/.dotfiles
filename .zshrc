@@ -175,3 +175,4 @@ alias grm='git rm'
 export PATH=$PATH:/Users/natural/.spicetify
 
 . "$HOME/.local/bin/env"
+alias htop='btop'
