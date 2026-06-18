@@ -72,6 +72,7 @@ ZSH_THEME="agnoster"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  gitignore
   zsh-autosuggestions
   zsh-syntax-highlighting
   zsh-completions
@@ -164,6 +165,13 @@ cabal() { ghcup_lazy_load; command cabal "$@"; }
 stack() { ghcup_lazy_load; command stack "$@"; }
 ghcup() { ghcup_lazy_load; command ghcup "$@"; }
 
+# Alias Finder
+
+zstyle ':omz:plugins:alias-finder' autoload yes # disabled by default
+zstyle ':omz:plugins:alias-finder' longer yes # disabled by default
+zstyle ':omz:plugins:alias-finder' exact yes # disabled by default
+zstyle ':omz:plugins:alias-finder' cheaper yes # disabled by default
+
 # Common Git aliases
 alias gs='git status'
 alias ga='git add'
@@ -174,5 +182,19 @@ alias grm='git rm'
 
 export PATH=$PATH:/Users/natural/.spicetify
 
+# C/C++ Include Path
+export C_INCLUDE_PATH="/usr/local/include:$C_INCLUDE_PATH"
+export CPLUS_INCLUDE_PATH="/usr/local/include:$CPLUS_INCLUDE_PATH"
+
 . "$HOME/.local/bin/env"
 alias htop='btop'
+
+# pnpm
+export PNPM_HOME="/Users/natural/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end
+alias g++='g++-15'
+alias lc='leetcode-fetch'
