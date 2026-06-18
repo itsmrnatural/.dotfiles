@@ -5,21 +5,6 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "F5 to Shazam",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "f5" },
-                                "to": [
-                                    {
-                                        "key_code": "r",
-                                        "modifiers": ["shift", "option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Change right_command+hjkl to arrow keys",
                         "manipulators": [
                             {
