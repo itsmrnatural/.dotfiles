@@ -1,0 +1,33 @@
+# macOS
+.DS_Store
+
+# Secrets (do not commit API keys/tokens)
+.config/exercism/
+.config/ngrok/
+
+# VS Code extensions (reinstall via marketplace)
+.vscode/extensions/
+
+# Raycast extensions (re-downloaded by Raycast)
+.config/raycast/extensions/
+
+# iTerm2 runtime data (sockets, db, binaries, saved state)
+.config/iterm2/
+
+# Auto-generated cache/data
+.config/leetgo/cache/
+
+# Karabiner automatic backups
+.config/karabiner/automatic_backups/
+
+# Install receipts (auto-generated)
+.config/ty/
+.config/uv/
+
+# Empty directories (no config value)
+.config/flox/
+.config/ghc/
+.vscode/cli/
+
+# Node modules
+node_modules/
