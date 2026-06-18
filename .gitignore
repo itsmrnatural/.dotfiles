@@ -29,5 +29,12 @@
 .config/ghc/
 .vscode/cli/
 
+# Zed runtime AI prompts database
+.config/zed/prompts/
+
+# Nested git repos (tracked independently)
+.config/nvim/
+.oh-my-zsh/
+
 # Node modules
 node_modules/
