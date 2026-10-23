@@ -1,13 +1,38 @@
 theme = "autumn_night"
 
 [editor]
-mouse = true
+line-number = "relative"
+cursorline = true
+scrolloff = 5
+bufferline = "multiple"
+color-modes = true
 true-color = true
+auto-format = true
+trim-trailing-whitespace = true
+text-width = 80
+popup-border = "all"
 
 [editor.cursor-shape]
-insert = "bar"
 normal = "block"
-select = "block"
+insert = "bar"
+select = "underline"
 
-[editor.file-picker]
-hidden = false
+[editor.statusline]
+left = ["mode", "file-name"]
+center = []
+right = ["diagnostics", "position", "file-type"]
+mode.normal = "NOR"
+mode.insert = "INS"
+mode.select = "SEL"
+
+[editor.lsp]
+display-inlay-hints = true
+auto-signature-help = true
+
+[editor.auto-save]
+focus-lost = true
+after-delay.enable = true
+after-delay.timeout = 3000
+
+[editor.smart-tab]
+enable = true
