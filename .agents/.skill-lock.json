@@ -1,0 +1,81 @@
+{
+  "version": 3,
+  "skills": {
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "eb6a23305aea6e340d14b9de3766e721f9f4861b",
+      "installedAt": "2026-07-08T09:39:03.346Z",
+      "updatedAt": "2026-07-08T09:39:03.346Z"
+    },
+    "design-taste-frontend": {
+      "source": "leonxlnx/taste-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/leonxlnx/taste-skill.git",
+      "skillPath": "skills/taste-skill/SKILL.md",
+      "skillFolderHash": "a6d128e53b4ec0238baee751dde33bf707adb5ec",
+      "installedAt": "2026-08-07T16:02:21.664Z",
+      "updatedAt": "2026-08-07T16:02:21.664Z"
+    },
+    "ui-design": {
+      "source": "uizze.com",
+      "sourceType": "well-known",
+      "sourceUrl": "https://uizze.com/.well-known/agent-skills/ui-design/f5d380f5d82a53023ce85cca081d1732313e20efbbac0ed13318642819744334/SKILL.md",
+      "skillFolderHash": "",
+      "sourceBaseUrl": "https://uizze.com/",
+      "wellKnownDigest": "sha256:f5d380f5d82a53023ce85cca081d1732313e20efbbac0ed13318642819744334",
+      "installedAt": "2026-08-07T17:59:12.648Z",
+      "updatedAt": "2026-08-07T17:59:12.648Z"
+    },
+    "anti-ui-slop": {
+      "source": "uizze.com",
+      "sourceType": "well-known",
+      "sourceUrl": "https://uizze.com/.well-known/agent-skills/anti-ui-slop/95568167c89fe454591dad6ffce4c9807486a097bc1408831bde22b882654914/SKILL.md",
+      "skillFolderHash": "",
+      "sourceBaseUrl": "https://uizze.com/",
+      "wellKnownDigest": "sha256:95568167c89fe454591dad6ffce4c9807486a097bc1408831bde22b882654914",
+      "installedAt": "2026-08-07T17:59:12.649Z",
+      "updatedAt": "2026-08-07T17:59:12.649Z"
+    },
+    "ui-slop-score": {
+      "source": "uizze.com",
+      "sourceType": "well-known",
+      "sourceUrl": "https://uizze.com/.well-known/agent-skills/ui-slop-score/39e567495a2d3e05715cfe471c8203a959f2288e6d90e229b5ba73e35b433565/SKILL.md",
+      "skillFolderHash": "",
+      "sourceBaseUrl": "https://uizze.com/",
+      "wellKnownDigest": "sha256:39e567495a2d3e05715cfe471c8203a959f2288e6d90e229b5ba73e35b433565",
+      "installedAt": "2026-08-07T17:59:12.649Z",
+      "updatedAt": "2026-08-07T17:59:12.649Z"
+    },
+    "ui-radar": {
+      "source": "uizze.com",
+      "sourceType": "well-known",
+      "sourceUrl": "https://uizze.com/.well-known/agent-skills/ui-radar/cb362261efbff5de4abb89ea4c90341eb978d43da3314c7dea026381c5e842e5/SKILL.md",
+      "skillFolderHash": "",
+      "sourceBaseUrl": "https://uizze.com/",
+      "wellKnownDigest": "sha256:cb362261efbff5de4abb89ea4c90341eb978d43da3314c7dea026381c5e842e5",
+      "installedAt": "2026-08-07T17:59:12.650Z",
+      "updatedAt": "2026-08-07T17:59:12.650Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "antigravity",
+    "antigravity-cli",
+    "cline",
+    "codex",
+    "cursor",
+    "deepagents",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-code-cli",
+    "opencode",
+    "warp",
+    "zed"
+  ]
+}
