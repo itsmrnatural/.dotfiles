@@ -1,0 +1,8 @@
+#!/bin/sh
+# Block commits that contain secrets.
+if ! command -v gitleaks >/dev/null 2>&1; then
+    echo "pre-commit: gitleaks not found (install with: brew install gitleaks)" >&2
+    exit 1
+fi
+
+exec gitleaks protect --staged --redact --verbose
