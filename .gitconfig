@@ -11,6 +11,15 @@
 [tag]
 	gpgSign = true
 [core]
+	pager = delta
 	editor = hx
+	hooksPath = /Users/natural/.dotfiles/.config/git/hooks
 [init]
 	defaultBranch = main
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	dark = true
+[merge]
+	conflictStyle = zdiff3
