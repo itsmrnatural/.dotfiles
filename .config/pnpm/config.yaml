@@ -1,0 +1,9 @@
+minimumReleaseAge: 4320
+minimumReleaseAgeStrict: true
+trustPolicy: no-downgrade
+trustPolicyIgnoreAfter: 129600
+strictDepBuilds: true
+verifyDepsBeforeRun: error
+saveExact: true
+engineStrict: true
+globalShims: false

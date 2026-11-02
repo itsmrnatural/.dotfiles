@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eu
 
-DOTFILES=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+DOTFILES=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
 
 link() {
     src=$DOTFILES/$1
@@ -19,6 +19,7 @@ link() {
 
 link .zshrc "$HOME/.zshrc"
 link .gitconfig "$HOME/.gitconfig"
+link .npmrc "$HOME/.npmrc"
 
 link .agents "$HOME/.agents"
 link .agents/skills "$HOME/.claude/skills"
@@ -36,6 +37,7 @@ for name in btop gh helix karabiner opencode spicetify; do
     link ".config/$name" "$HOME/.config/$name"
 done
 link .config/starship.toml "$HOME/.config/starship.toml"
+link .config/pnpm/config.yaml "$HOME/Library/Preferences/pnpm/config.yaml"
 
 chmod +x "$DOTFILES/.config/git/hooks/pre-commit"
 git config --global core.hooksPath "$DOTFILES/.config/git/hooks"
